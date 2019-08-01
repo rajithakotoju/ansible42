@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Installing free software on node
+    .apt:
+      name: tree
+      state: present
+      
