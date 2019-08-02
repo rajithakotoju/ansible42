@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: Installing free software on node
-    .apt:
+    apt:
       name: tree
       state: present
       
